@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "${modid}",
+	"version": "${version}",
+	"name": "${modname}",
+	"description": "A mod that adds modern militaristic armors and melee weapons.",
+	"authors": [
+		"Kazai",
+		"MarbledNull"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/marbleds-arsenal-fabric"
+	},
+	"license": "ARR",
+	"icon": "assets/marbledsarsenal/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.kazai.marbledsarsenal.MarbledsArsenal"
+		],
+		"client": [
+			"dev.kazai.marbledsarsenal.MarbledsArsenalClient"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "${depends_minecraft_version}",
+		"java": ">=17",
+		"fabric-api": "*",
+		"geckolib": ">=${geckolib_version}",
+		"marbledsapi": ">=${marbledsapi_version}"
+	},
+	"suggests": {}
+}

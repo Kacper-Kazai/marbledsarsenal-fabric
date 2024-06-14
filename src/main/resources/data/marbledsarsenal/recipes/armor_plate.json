@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#i#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "marbledsapi:steel_sheet"
+    },
+    "i": {
+      "tag": "c:steel_ingots"
+    }
+  },
+  "result": {
+    "item": "marbledsarsenal:armor_plate",
+    "count": 1
+  }
+}
