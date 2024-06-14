@@ -5,7 +5,8 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import software.bernie.geckolib.animatable.client.RenderProvider;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -79,23 +80,23 @@ public class MarbledsArsenalItems {
     public static final Item BLACK_JUGGERNAUT_ARMOR_CHESTPLATE = registerItem("black_juggernaut_armor_chestplate", new BasicGeoArmorItem("animation.juggernaut_armor.idle", ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final Item BLACK_JUGGERNAUT_ARMOR_LEGGINGS = registerItem("black_juggernaut_armor_leggings", new BasicGeoArmorItem("animation.juggernaut_armor.idle", ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final Item BLACK_JUGGERNAUT_ARMOR_BOOTS = registerItem("black_juggernaut_armor_boots", new BasicGeoArmorItem("animation.juggernaut_armor.idle", ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
-    public static final Item CROWBAR = registerItem("crowbar", new SwordItem(Tiers.IRON, 3, -2.4F, (new Item.Properties()).durability(500)));
-    public static final Item FIRE_AXE = registerItem("fire_axe", new AxeItem(Tiers.IRON, 5.0F, -3.1F, (new Item.Properties()).durability(500)));
-    public static final Item MODERN_AXE = registerItem("modern_axe", new AxeItem(Tiers.IRON, 6.0F, -3.0F, (new Item.Properties()).durability(750)));
-    public static final Item TOMAHAWK = registerItem("tomahawk", new AxeItem(Tiers.IRON, 4.0F, -2.6F, (new Item.Properties()).durability(250)));
-    public static final Item PIPE_WRENCH = registerItem("pipe_wrench", new SwordItem(Tiers.IRON, 2, -2.3F, (new Item.Properties()).durability(500)));
-    public static final Item SLEDGEHAMMER = registerItem("sledgehammer", new SwordItem(Tiers.IRON, 9, -3.4F, (new Item.Properties()).durability(1000)));
-    public static final Item BONE_SAW = registerItem("bone_saw", new SwordItem(Tiers.IRON, 4, -2.4F, (new Item.Properties()).durability(250)));
-    public static final Item POLICE_BATON = registerItem("police_baton", new SwordItem(Tiers.IRON, 2, -2.4F, (new Item.Properties()).durability(500)));
-    public static final Item MACHETE = registerItem("machete", new SwordItem(Tiers.IRON, 5, -2.4F, (new Item.Properties()).durability(500)));
-    public static final Item STOP_SIGN = registerItem("stop_sign", new SwordItem(Tiers.IRON, 7, -3.4F, (new Item.Properties()).durability(1000)));
-    public static final Item KATANA = registerItem("katana", new SwordItem(Tiers.IRON, 5, -2.7F, (new Item.Properties()).durability(750)));
-    public static final Item TANTO = registerItem("tanto", new SwordItem(Tiers.IRON, 3, -2.3F, (new Item.Properties()).durability(250)));
-    public static final Item BASEBALL_BAT = registerItem("baseball_bat", new SwordItem(Tiers.IRON, 1, -2.4F, (new Item.Properties()).durability(500)));
-    public static final Item BARBED_BASEBALL_BAT = registerItem("barbed_baseball_bat", new SwordItem(Tiers.IRON, 3, -2.4F, (new Item.Properties()).durability(500)));
-    public static final Item STEEL_BASEBALL_BAT = registerItem("steel_baseball_bat", new SwordItem(Tiers.IRON, 5, -2.7F, (new Item.Properties()).durability(750)));
+    public static final Item CROWBAR = registerItem("crowbar", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(SwordItem.createAttributes(Tiers.IRON, 3, -2.4F))));
+    public static final Item FIRE_AXE = registerItem("fire_axe", new AxeItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(AxeItem.createAttributes(Tiers.IRON, 5.0F, -3.1F))));
+    public static final Item MODERN_AXE = registerItem("modern_axe", new AxeItem(Tiers.IRON, (new Item.Properties()).durability(750).attributes(AxeItem.createAttributes(Tiers.IRON, 4.0F, -2.6F))));
+    public static final Item TOMAHAWK = registerItem("tomahawk", new AxeItem(Tiers.IRON, (new Item.Properties()).durability(250).attributes(AxeItem.createAttributes(Tiers.IRON, 5.0F, -3.1F))));
+    public static final Item PIPE_WRENCH = registerItem("pipe_wrench", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(SwordItem.createAttributes(Tiers.IRON, 2, -2.3F))));
+    public static final Item SLEDGEHAMMER = registerItem("sledgehammer", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(1000).attributes(SwordItem.createAttributes(Tiers.IRON, 9, -3.4F))));
+    public static final Item BONE_SAW = registerItem("bone_saw", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(250).attributes(SwordItem.createAttributes(Tiers.IRON, 4, -2.4F))));
+    public static final Item POLICE_BATON = registerItem("police_baton", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(SwordItem.createAttributes(Tiers.IRON, 2, -2.4F))));
+    public static final Item MACHETE = registerItem("machete", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(SwordItem.createAttributes(Tiers.IRON, 5, -2.4F))));
+    public static final Item STOP_SIGN = registerItem("stop_sign", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(1000).attributes(SwordItem.createAttributes(Tiers.IRON, 7, -3.4F))));
+    public static final Item KATANA = registerItem("katana", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(750).attributes(SwordItem.createAttributes(Tiers.IRON, 5, -2.7F))));
+    public static final Item TANTO = registerItem("tanto", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(250).attributes(SwordItem.createAttributes(Tiers.IRON, 3, -2.3F))));
+    public static final Item BASEBALL_BAT = registerItem("baseball_bat", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(SwordItem.createAttributes(Tiers.IRON, 1, -2.4F))));
+    public static final Item BARBED_BASEBALL_BAT = registerItem("barbed_baseball_bat", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(500).attributes(SwordItem.createAttributes(Tiers.IRON, 3, -2.4F))));
+    public static final Item STEEL_BASEBALL_BAT = registerItem("steel_baseball_bat", new SwordItem(Tiers.IRON, (new Item.Properties()).durability(750).attributes(SwordItem.createAttributes(Tiers.IRON, 5, -2.7F))));
 
-    public static Map<Item, RenderProvider> renderers = new HashMap<>();
+    public static Map<Item, GeoRenderProvider> renderers = new HashMap<>();
 
     public static Item registerItem(String name, Item item) {
         return registerItem(new ResourceLocation(MarbledsArsenal.MODID, name), item);

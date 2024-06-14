@@ -6,7 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import software.bernie.geckolib.animatable.client.RenderProvider;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 import java.util.function.Supplier;
@@ -109,61 +109,61 @@ public class MarbledsArsenalClientItems {
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.UN_MILITARY_BERET, createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/military_beret.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/un_military_beret.png"), new ResourceLocation("marbledsarsenal", "animations/military_beret.animation.json")));
         }));
-        RenderProvider blackPlateRenderProvider = createRenderProvider(() -> {
+        GeoRenderProvider blackPlateRenderProvider = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/plate_carrier.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/black_plate_carrier.png"), new ResourceLocation("marbledsarsenal", "animations/plate_carrier.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.BLACK_PLATE_CARRIER_T1, blackPlateRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.BLACK_PLATE_CARRIER_T2, blackPlateRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.BLACK_PLATE_CARRIER_T3, blackPlateRenderProvider);
-        RenderProvider olivePlateRenderProvider = createRenderProvider(() -> {
+        GeoRenderProvider olivePlateRenderProvider = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/plate_carrier.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/olive_plate_carrier.png"), new ResourceLocation("marbledsarsenal", "animations/plate_carrier.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_PLATE_CARRIER_T1, olivePlateRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_PLATE_CARRIER_T2, olivePlateRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_PLATE_CARRIER_T3, olivePlateRenderProvider);
-        RenderProvider riotArmorRenderProvider = createRenderProvider(() -> {
+        GeoRenderProvider riotArmorRenderProvider = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/riot_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/riot_armor.png"), new ResourceLocation("marbledsarsenal", "animations/riot_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.RIOT_ARMOR_HELMET, riotArmorRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.RIOT_ARMOR_CHESTPLATE, riotArmorRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.RIOT_ARMOR_LEGGINGS, riotArmorRenderProvider);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.RIOT_ARMOR_BOOTS, riotArmorRenderProvider);
-        RenderProvider winterMilitaryArmorRenderer = createRenderProvider(() -> {
+        GeoRenderProvider winterMilitaryArmorRenderer = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/military_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/winter_military_armor.png"), new ResourceLocation("marbledsarsenal", "animations/military_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.WINTER_MILITARY_ARMOR_HELMET, winterMilitaryArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.WINTER_MILITARY_ARMOR_CHESTPLATE, winterMilitaryArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.WINTER_MILITARY_ARMOR_LEGGINGS, winterMilitaryArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.WINTER_MILITARY_ARMOR_BOOTS, winterMilitaryArmorRenderer);
-        RenderProvider desertMilitaryArmorRenderer = createRenderProvider(() -> {
+        GeoRenderProvider desertMilitaryArmorRenderer = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/military_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/desert_military_armor.png"), new ResourceLocation("marbledsarsenal", "animations/military_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.DESERT_MILITARY_ARMOR_HELMET, desertMilitaryArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.DESERT_MILITARY_ARMOR_CHESTPLATE, desertMilitaryArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.DESERT_MILITARY_ARMOR_LEGGINGS, desertMilitaryArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.DESERT_MILITARY_ARMOR_BOOTS, desertMilitaryArmorRenderer);
-        RenderProvider swatArmorRenderer = createRenderProvider(() -> {
+        GeoRenderProvider swatArmorRenderer = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/swat_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/swat_armor.png"), new ResourceLocation("marbledsarsenal", "animations/swat_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.SWAT_ARMOR_HELMET, swatArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.SWAT_ARMOR_CHESTPLATE, swatArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.SWAT_ARMOR_LEGGINGS, swatArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.SWAT_ARMOR_BOOTS, swatArmorRenderer);
-        RenderProvider hazmatArmorRenderer = createRenderProvider(() -> {
+        GeoRenderProvider hazmatArmorRenderer = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/hazmat_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/hazmat_armor.png"), new ResourceLocation("marbledsarsenal", "animations/hazmat_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.HAZMAT_ARMOR_HELMET, hazmatArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.HAZMAT_ARMOR_CHESTPLATE, hazmatArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.HAZMAT_ARMOR_LEGGINGS, hazmatArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.HAZMAT_ARMOR_BOOTS, hazmatArmorRenderer);
-        RenderProvider oliveJuggernautArmorRenderer = createRenderProvider(() -> {
+        GeoRenderProvider oliveJuggernautArmorRenderer = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/juggernaut_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/olive_juggernaut_armor.png"), new ResourceLocation("marbledsarsenal", "animations/juggernaut_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_JUGGERNAUT_ARMOR_HELMET, oliveJuggernautArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_JUGGERNAUT_ARMOR_CHESTPLATE, oliveJuggernautArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_JUGGERNAUT_ARMOR_LEGGINGS, oliveJuggernautArmorRenderer);
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.OLIVE_JUGGERNAUT_ARMOR_BOOTS, oliveJuggernautArmorRenderer);
-        RenderProvider blackJuggernautArmorRenderer = createRenderProvider(() -> {
+        GeoRenderProvider blackJuggernautArmorRenderer = createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(new ResourceLocation("marbledsarsenal", "geo/juggernaut_armor.geo.json"), new ResourceLocation("marbledsarsenal", "textures/armor/black_juggernaut_armor.png"), new ResourceLocation("marbledsarsenal", "animations/juggernaut_armor.animation.json")));
         });
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.BLACK_JUGGERNAUT_ARMOR_HELMET, blackJuggernautArmorRenderer);
@@ -172,16 +172,15 @@ public class MarbledsArsenalClientItems {
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.BLACK_JUGGERNAUT_ARMOR_BOOTS, blackJuggernautArmorRenderer);
     }
 
-    protected static <T extends GeoArmorRenderer> RenderProvider createRenderProvider(Supplier<T> supplier) {
-        return new RenderProvider() {
+    protected static <T extends GeoArmorRenderer> GeoRenderProvider createRenderProvider(Supplier<T> supplier) {
+        return new GeoRenderProvider() {
             private T renderer;
 
-            public HumanoidModel getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel original) {
+            public HumanoidModel getGeoArmorRenderer(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel original) {
                 if (this.renderer == null) {
                     this.renderer = supplier.get();
                 }
 
-                this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;
             }
         };
