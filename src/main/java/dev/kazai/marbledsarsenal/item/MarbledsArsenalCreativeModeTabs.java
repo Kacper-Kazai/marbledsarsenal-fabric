@@ -102,7 +102,7 @@ public class MarbledsArsenalCreativeModeTabs {
     );
 
     public static CreativeModeTab registerCreativeModeTab(String name, CreativeModeTab creativeModeTab) {
-        return registerCreativeModeTab(new ResourceLocation(MarbledsArsenal.MODID, name), creativeModeTab);
+        return registerCreativeModeTab(ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, name), creativeModeTab);
     }
 
     public static CreativeModeTab registerCreativeModeTab(ResourceLocation location, CreativeModeTab creativeModeTab) {

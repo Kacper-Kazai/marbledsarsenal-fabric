@@ -99,7 +99,7 @@ public class MarbledsArsenalItems {
     public static Map<Item, GeoRenderProvider> renderers = new HashMap<>();
 
     public static Item registerItem(String name, Item item) {
-        return registerItem(new ResourceLocation(MarbledsArsenal.MODID, name), item);
+        return registerItem(ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, name), item);
     }
     public static Item registerItem(ResourceLocation location, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, location, item);
