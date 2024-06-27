@@ -29,7 +29,10 @@
 		"java": ">=21",
 		"fabric-api": "*",
 		"geckolib": ">=${geckolib_version}",
-		"marbledsapi": ">=${marbledsapi_version}"
+		"mcore": ">=${mcore_version}"
 	},
-	"suggests": {}
+	"suggests": {
+		"create": "*",
+		"bettercombat": "*"
+	}
 }

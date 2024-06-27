@@ -1,4 +1,12 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcore"
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "II",
@@ -7,7 +15,7 @@
   ],
   "key": {
     "I": {
-      "item": "marbledsapi:steel_sheet"
+      "item": "mcore:steel_sheet"
     },
     "/": {
       "item": "minecraft:stick"

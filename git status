@@ -1,0 +1,29 @@
+[33mcommit 35900284106b3d170ff8fbe61869e76122ec9b04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32m1.21[m[33m)[m
+Author: Kazai <kacper.kazai@gmail.com>
+Date:   Thu Jun 27 22:36:18 2024 +0200
+
+    add suggests
+
+[33mcommit 6b0b00a81ea3cf31683c4fe97fe1968079f69dce[m
+Author: Kazai <kacper.kazai@gmail.com>
+Date:   Thu Jun 27 22:33:08 2024 +0200
+
+    mcore rebranding & fix loading recipes error
+
+[33mcommit 3fd7d8a364cc1ebe7b97da11ef9f29ab00313503[m
+Author: Kazai <kacper.kazai@gmail.com>
+Date:   Sat Jun 15 04:18:14 2024 +0200
+
+    Update to 1.21+
+
+[33mcommit 82a8995e3b29caf80c043a7810145b609eb94a4c[m[33m ([m[1;32m1.20.5[m[33m)[m
+Author: Kazai <kacper.kazai@gmail.com>
+Date:   Sat Jun 15 01:37:11 2024 +0200
+
+    Update to 1.20.5+
+
+[33mcommit 9e4ea9f588146fa6d111afefaed74c5d46bf426e[m[33m ([m[1;32m1.20.1[m[33m)[m
+Author: Kazai <kacper.kazai@gmail.com>
+Date:   Fri Jun 14 23:08:25 2024 +0200
+
+    init
