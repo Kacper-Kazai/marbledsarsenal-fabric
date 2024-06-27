@@ -1,4 +1,18 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:steel_ingots"
+      ]
+    },
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcore"
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "iii",
@@ -9,7 +23,7 @@
       "tag": "c:steel_ingots"
     },
     "I": {
-      "item": "marbledsapi:steel_sheet"
+      "item": "mcore:steel_sheet"
     },
     "G": {
       "item": "minecraft:blue_dye"

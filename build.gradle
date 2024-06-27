@@ -44,7 +44,7 @@ dependencies {
 	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
 	implementation("com.eliotlash.mclib:mclib:20")
 
-	modImplementation "dev.kazai:marbledsapi-fabric-${minecraft_version}:${marbledsapi_version}"
+	modImplementation "dev.kazai:marbledscore-fabric-${minecraft_version}:${mcore_version}"
 }
 
 processResources {
@@ -54,7 +54,7 @@ processResources {
 	inputs.property "loader_version", project.loader_version
 	inputs.property "depends_minecraft_version", project.depends_minecraft_version
 	inputs.property "geckolib_version", project.geckolib_version
-	inputs.property "marbledsapi_version", project.marbledsapi_version
+	inputs.property "mcore_version", project.mcore_version
 
 	filesMatching("fabric.mod.json") {
 		expand "modid": project.modid,
@@ -63,7 +63,7 @@ processResources {
 				"loader_version": project.loader_version,
 				"depends_minecraft_version": project.depends_minecraft_version,
 				"geckolib_version": project.geckolib_version,
-				"marbledsapi_version": project.marbledsapi_version
+				"mcore_version": project.mcore_version
 	}
 }
 
