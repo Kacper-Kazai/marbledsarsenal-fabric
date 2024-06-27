@@ -31,5 +31,8 @@
 		"geckolib": ">=${geckolib_version}",
 		"mcore": ">=${mcore_version}"
 	},
-	"suggests": {}
+	"suggests": {
+		"create": "*",
+		"bettercombat": "*"
+	}
 }
