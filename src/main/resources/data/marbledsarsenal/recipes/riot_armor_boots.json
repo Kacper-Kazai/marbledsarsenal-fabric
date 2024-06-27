@@ -1,4 +1,12 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcore"
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#G#",
@@ -6,13 +14,13 @@
   ],
   "key": {
     "#": {
-      "item": "marbledsapi:steel_sheet"
+      "item": "mcore:steel_sheet"
     },
     "G": {
       "item": "minecraft:gray_dye"
     },
     "i": {
-      "item": "marbledsapi:steel_ingot"
+      "item": "mcore:steel_ingot"
     }
   },
   "result": {

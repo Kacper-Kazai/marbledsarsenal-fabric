@@ -1,4 +1,18 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:steel_ingots"
+      ]
+    },
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcore"
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "## ",
@@ -7,7 +21,7 @@
   ],
   "key": {
     "#": {
-      "item": "marbledsapi:steel_sheet"
+      "item": "mcore:steel_sheet"
     },
     "/": {
       "item": "minecraft:stick"

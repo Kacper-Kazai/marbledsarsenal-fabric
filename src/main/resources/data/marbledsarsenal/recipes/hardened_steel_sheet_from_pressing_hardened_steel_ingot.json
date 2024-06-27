@@ -1,4 +1,18 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    },
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcore"
+      ]
+    }
+  ],
   "type": "create:pressing",
   "ingredients": [
     {

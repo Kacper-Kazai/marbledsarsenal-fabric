@@ -1,4 +1,12 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcore"
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "iGi",
@@ -9,7 +17,7 @@
       "item": "minecraft:black_dye"
     },
     "i": {
-      "item": "marbledsapi:hardened_steel_ingot"
+      "item": "mcore:hardened_steel_ingot"
     }
   },
   "result": {
