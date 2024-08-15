@@ -77,10 +77,10 @@ public class MarbledsArsenalClientItems {
             return new BasicGeoArmorRenderer(new BasicGeoModel(ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "geo/helmet_cm8m.geo.json"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "textures/armor/medical_olive_helmet_cm8m.png"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "animations/helmet_cm8m.animation.json")));
         }));
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.WHITE_GP5_GAS_MASK, createRenderProvider(() -> {
-            return new BasicGeoArmorRenderer(new BasicGeoModel(ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "geo/gp5.geo.json"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "textures/armor/black_gp5.png"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "animations/gp5.animation.json")));
+            return new BasicGeoArmorRenderer(new BasicGeoModel(ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "geo/gp5.geo.json"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "textures/armor/white_gp5.png"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "animations/gp5.animation.json")));
         }));
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.BLACK_GP5_GAS_MASK, createRenderProvider(() -> {
-            return new BasicGeoArmorRenderer(new BasicGeoModel(ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "geo/gp5.geo.json"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "textures/armor/white_gp5.png"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "animations/gp5.animation.json")));
+            return new BasicGeoArmorRenderer(new BasicGeoModel(ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "geo/gp5.geo.json"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "textures/armor/black_gp5.png"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "animations/gp5.animation.json")));
         }));
         MarbledsArsenalItems.renderers.put(MarbledsArsenalItems.COMBAT_HELMET, createRenderProvider(() -> {
             return new BasicGeoArmorRenderer(new BasicGeoModel(ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "geo/combat_helmet.geo.json"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "textures/armor/combat_helmet.png"), ResourceLocation.fromNamespaceAndPath("marbledsarsenal", "animations/combat_helmet.animation.json")));
