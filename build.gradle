@@ -44,7 +44,7 @@ dependencies {
 	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
 	implementation("com.eliotlash.mclib:mclib:20")
 
-	modImplementation "dev.kazai:marbledscore-fabric:${mcore_version}"
+	modImplementation "dev.kazai:marbledscore-fabric-${minecraft_version}:${mcore_version}"
 }
 
 processResources {
@@ -87,7 +87,7 @@ jar {
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
+			artifactId = "${project.archives_base_name}-${minecraft_version}"
 			from components.java
 		}
 	}
